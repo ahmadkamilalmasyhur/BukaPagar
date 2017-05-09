@@ -1,3 +1,4 @@
+<<<<<<< 40151cd157284e10739e6eaa4874380b36a62ead
 # Built application files
 *.apk
 *.ap_
@@ -38,3 +39,14 @@ captures/
 
 # Keystore files
 *.jks
+=======
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+>>>>>>> initial committ add *.c
