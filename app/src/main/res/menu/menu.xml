@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sehati="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Non Aktif / Aktifkan"
+        sehati:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_help"
+        android:title="Delete"
+        sehati:showAsAction="ifRoom" />
+
+
+</menu>

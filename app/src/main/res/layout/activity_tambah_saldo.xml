@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tahutelorcommunity.bukapagar.Activity.TambahSaldoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        app:titleTextColor="@color/colorTextWhite"
+        app:title="Tambah Saldo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/jumlahtambahan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginTop="50dp"
+        android:text="JUMLAH TAMBAHAN"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/saldotambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumlahtambahan"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginRight="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/bayarlewat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saldotambahan"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:text="Bayar Lewat?"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/saldospinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bayarlewat"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginRight="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:entries="@array/jenispembayaran2">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saldospinner"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:onClick="tambahSaldo"
+        android:layout_marginRight="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/bg_primary"
+        android:text="@string/tambahsaldo"
+        android:textColor="@android:color/white" />
+</LinearLayout>

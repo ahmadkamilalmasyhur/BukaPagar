@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.tahutelorcommunity.bukapagar.Model.AllCategories;
+import com.tahutelorcommunity.bukapagar.Model.Categories.Categories;
 import com.tahutelorcommunity.bukapagar.R;
 
 /**
@@ -16,10 +16,10 @@ import com.tahutelorcommunity.bukapagar.R;
 
 public class RecyclerAdapterText extends RecyclerView.Adapter<RecyclerAdapterText.MyViewHolder> {
 
-    AllCategories vertical;
+    Categories vertical;
     Context context;
 
-    public RecyclerAdapterText(AllCategories horizontalList, Context context) {
+    public RecyclerAdapterText(Categories horizontalList, Context context) {
         this.vertical = horizontalList;
         this.context = context;
     }

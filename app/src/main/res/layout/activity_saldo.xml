@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.tahutelorcommunity.bukapagar.Activity.SaldoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        app:titleTextColor="@color/colorTextWhite"
+        app:title="Saldo"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/saldotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/appbar_padding_top"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:text="@string/totalsaldo" />
+
+        <TextView
+            android:id="@+id/saldojml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/saldotext"
+            android:layout_marginLeft="@dimen/appbar_padding_top"
+            android:text="@string/jmlsaldo"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_tambahsaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:background="@drawable/bg_primary"
+            android:text="@string/tambahsaldo"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/saldoview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/saldojml"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:background="@color/accent" />
+
+        <TextView
+            android:id="@+id/saldoriwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saldoview"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:gravity="center"
+            android:text="@string/riwayat" />
+
+        <View
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/saldoriwayat"
+            android:layout_marginTop="@dimen/appbar_padding_top"
+            android:background="@color/accent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_saldo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/saldo"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+</LinearLayout>

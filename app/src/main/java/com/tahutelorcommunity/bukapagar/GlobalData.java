@@ -1,8 +1,7 @@
 package com.tahutelorcommunity.bukapagar;
 
-
-import com.tahutelorcommunity.bukapagar.Model.AllCategories;
-import com.tahutelorcommunity.bukapagar.Model.User;
+import com.tahutelorcommunity.bukapagar.Model.Authenticate.Login.User;
+import com.tahutelorcommunity.bukapagar.Model.Categories.Categories;
 
 /**
  * Created by Farizko on 06-May-17.
@@ -15,5 +14,5 @@ public class GlobalData {
     public static final String facebook_login = "facebook_loginv2.json";
     public static final String all_categories = "categories.json";
     public static User userLogin;
-    public static AllCategories allCategories;
+    public static Categories allCategories;
 }

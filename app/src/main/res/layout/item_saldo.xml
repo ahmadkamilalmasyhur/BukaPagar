@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tipepembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:text="Tipe pembayaran : "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/saldotipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:layout_toRightOf="@+id/tipepembayaran"
+        android:text="Debit"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/saldotanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:text="25-12-2017"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/saldoharga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/saldotanggal"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:text="Rp.35.000"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pembayaranuntuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saldoharga"
+        android:layout_marginLeft="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:text="Pembayaran untuk Transaksi : " />
+
+    <TextView
+        android:id="@+id/saldoid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saldoharga"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:layout_toRightOf="@+id/pembayaranuntuk"
+        android:text="#151228020090"
+        android:textColor="@color/colorTextBlack" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/saldoid"
+        android:layout_marginBottom="@dimen/appbar_padding_top"
+        android:layout_marginTop="@dimen/appbar_padding_top"
+        android:background="@color/gray_holo_light" />
+</RelativeLayout>

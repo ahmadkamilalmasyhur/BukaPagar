@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "985013724395",
+    "firebase_url": "https://bukapagar-7b968.firebaseio.com",
+    "project_id": "bukapagar-7b968",
+    "storage_bucket": "bukapagar-7b968.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985013724395:android:7bd86ec70795bab9",
+        "android_client_info": {
+          "package_name": "com.tahutelorcommunity.bukapagar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985013724395-cc92ss92kbpue368l0uip9goqor9e874.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxiFLgPFWld_FKMVuT2dmRAT8QRWp_E4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="8dp"
+
+    android:elevation="2dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/country_photo"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:contentDescription="@string/action_settings"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ava"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/country_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Andi"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:textSize="14dp"
+                android:id="@+id/country_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Jl.  Wr Suprapto no.134 Rt. 02 Rw 02 Desa Lowokwaru Malang"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp. 100.000/ malam"
+                android:textSize="15dp"/>
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:rating="3"
+                android:theme="@style/styleRatingBar"
+                />
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Tidak Tersedia"
+                android:textColor="#F00"
+                android:textSize="13dp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="30dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

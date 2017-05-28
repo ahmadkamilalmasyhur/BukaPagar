@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tahutelorcommunity.ronsokin.Auth.LoginActivity">
+    android:orientation="vertical"
+    tools:context="com.tahutelorcommunity.bukapagar.Auth.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
 
     <LinearLayout
@@ -60,7 +76,7 @@
             android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
             android:text="@string/btn_login"
-            android:textColor="@color/colorText" />
+            android:textColor="@color/colorTextWhite" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,9 +96,9 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:clickable="true"
                 android:background="@color/gray_to_white"
+                android:clickable="true"
+                android:gravity="center"
                 android:padding="10dp">
 
                 <ImageView
@@ -105,9 +121,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:background="@color/gray_to_white"
-                android:padding="10dp"
                 android:clickable="true"
-                android:gravity="center">
+                android:gravity="center"
+                android:padding="10dp">
 
                 <ImageView
                     android:layout_width="30dp"
@@ -151,10 +167,11 @@
 
     <ProgressBar
         android:id="@+id/login_progressBar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:visibility="gone" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+</RelativeLayout>
 
 </LinearLayout>

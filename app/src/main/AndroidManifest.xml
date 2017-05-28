@@ -5,24 +5,55 @@
     <uses-permission
         android:name="android.permission.INTERNET"
         android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/bpicon"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Auth.LoginActivity">
+        <activity android:name=".Auth.LoginActivity" />
+        <activity android:name=".Auth.ResetPasswordActivity" />
+        <activity android:name=".Auth.SignUpActivity" />
+        <activity android:name=".MainApps.CobaCobaActivity" />
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.DetailPenginapanActivity" />
+        <activity android:name=".Activity.DetailTransaksi" />
+        <activity android:name=".Activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Auth.ResetPasswordActivity" />
-        <activity android:name=".Auth.SignUpActivity" />
-        <activity android:name=".MainApps.CobaCobaActivity"></activity>
+        <activity
+            android:name=".Activity.PencarianRumahActivity"
+            android:label="@string/title_activity_pencarian_rumah"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Activity.BukaRumahActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.CreatePenginapanActivity" />
+        <activity android:name=".Activity.TambahSaldoActivity" />
+        <activity android:name=".Activity.SaldoActivity" />
+        <activity android:name=".Activity.TransaksiTuanRumahActivity" />
+        <activity android:name=".Activity.TransaksiPenyewaActivity" />
+        <activity android:name=".Activity.DetailPenginapanAddToCart" />
+        <activity android:name=".Activity.CartActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activity.CreateInvoiceActivity"></activity>
     </application>
 
 </manifest>

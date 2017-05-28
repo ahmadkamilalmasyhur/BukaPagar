@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cari_pagar"
+            android:title="Cari Pagar" />
+        <item
+            android:id="@+id/nav_buka_pagar"
+            android:title="Buka Pagar" />
+    </group>
+    <item
+        android:checkableBehavior="single"
+        android:title="Transaksi">
+        <menu android:id="@+id/nav_transaksi">
+            <item
+                android:id="@+id/nav_transaksi_tuan_rumah"
+                android:title="Tuan Rumah" />
+            <item
+                android:id="@+id/nav_transaksi_penyewa"
+                android:title="Penyewa" />
+        </menu>
+    </item>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cart"
+            android:title="Keranjang" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Pengaturan" />
+    </group>
+</menu>
